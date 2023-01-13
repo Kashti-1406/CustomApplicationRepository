@@ -1,0 +1,37 @@
+
+
+Java 8 Features:
+1. Functional Interface :regular function, function with definition, static function, private method
+    We use the lambda expression to represent the functional interface.
+    The @FunctionalInterface annotation is optional.without a functional interface,
+    we would have to use an Anonymous class, which is not that bad, but functional interfaces
+    make the code more straightforward to read.
+    -> It's just used to ensure that there is only one abstract method.
+    -> A functional interface cannot extend another functional interface.
+    -> A functional interface can contain any number of Object class methods.
+    -> help us in writing smaller and cleaner code by removing a lot of boiler-plate code( repeated code)
+
+2. Lamda Expression:
+
+3. Double colon operator: The double colon (::) operator, also known as method reference operator in Java,
+ is used to call a method by referring to it with the help of its class directly.
+ They behave exactly as the lambda expressions.
+ The only difference it has from lambda expressions is that this uses direct reference to the method
+ by name instead of providing a delegate to the method.
+
+ 4. Optional : With Optional, we can specify alternate values to return or alternate code to run.
+ to avoid writing extra null checks. and to avoid NullpointerException atleast at some places.
+
+-------------------------------------------------------------------------------------------
+Streams:
+ava.util.stream – which contains classes for processing sequences of elements.
+Streams can be created from different element sources e.g. collection or array with the help of stream()
+ and of() methods:
+-------------------------------------------------------------------------------------------
+Filter
+Sorted
+Map
+Match
+Count
+Reduce
+
